@@ -22,3 +22,9 @@ def ladderLength(beginWord, endWord, wordList):
                     queue.append((next_word, steps + 1))
 
     return 0
+
+beginWord = "hit"
+endWord = "cog"
+wordList = ["hot", "dot", "dog", "lot", "log", "cog"]
+
+print(ladderLength(beginWord, endWord, wordList))  # Expected: 5
